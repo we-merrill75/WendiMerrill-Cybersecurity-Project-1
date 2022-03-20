@@ -54,22 +54,26 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box |     No              | 174.63.0.246         |
-| Web 1            No              |                      |
-| Web2     |     No                |                      |
-| Elk Server  |  
+| Jump Box |     Yes             | 174.63.0.246         |
+| Web 1    |     No              | 20.124.125.77/40.122.198.213             |
+| Web2     |     No              | 20.124.125.77/40.122.198.213             |
+| Elk Server  |  yes             | 40.122.198.213/10.0.0.5/10.0.0.6       |
 
 
 The Jump Box can be accessed from my public or private ip.
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
-
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it saves time and is efficient processing tasks.
+What is the main advantage of automating configuration with Ansible?
+Ansible automation helps considerably with the representation of Infrastructure as Code (IAC). IAC involves provisioning and management of computing infrastructure and related configuration through machine-processable definition files. 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- I used the secure shell ssh port 22 to access my jumpbox.
+- I attached my container to the jumpbox and accessed my ansible.
+- I created the Elk playbook and copied the Elk configuration in the etc/ansible directory.
+- I ensured that my Ansible.cfg file had the correct host, by changing host file ip adresses     to my VM's Web 1 10.0.0.5, Web 2 10.0.0.6, and Elk Server 10.1.0.
+ - I added the python interpreter behind every ip address.
+ - I then ran the ansible-playbook config-Elk-vm.yml command to install elk in my container.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
