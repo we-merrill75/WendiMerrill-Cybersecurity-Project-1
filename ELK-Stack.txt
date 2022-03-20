@@ -6,7 +6,7 @@ https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/Elk_Stack_Topo
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the .yml files may be used to install only certain pieces of it, such as Filebeat.
 
-https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/config-Elk-vm.yml
+https://github.com/we-merrill75/Cybersecurity-Project-1.git
 
 This document contains the following details:
 - Description of the Topology
@@ -78,12 +78,9 @@ The playbook implements the following tasks:
 The steps of the ELK installation are laid out below:
   - use ssh to access the Jump Box from my host machine.
   - using Ansible, create a container with a randomly assigned name. (wizardly_sammet)
-  - attach container to the jumpbox through wich the container can be accessed.
-  - using a template, create an Elk playbook which I named config-Elk-vm.yml and saved in the etc/ansible directory.
-  - using a template, change the host and ip values in the Ansible configuration file which I named                          g file had the correct host, by changing host file ip adresses     to my VM's Web 1 10.0.0.5, Web 2 10.0.0.6, and Elk Server 10.1.0.
-   - I added the python interpreter behind every ip address.
-   - I then ran the ansible-playbook config-Elk-vm.yml command to install elk in my container.
-
+  - attach container to the jumpbox through wich the container can be accessed..
+  - run the playbook to install elk in the container
+ 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
