@@ -32,14 +32,13 @@ Filebeat monitors the log files (or specified locations), collects the log event
 Metricbeat monitors servers by collecting metrics from the system and services running on the server. The information that it collects is sent to a SIEM tool like ELK-Stack. 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name      | Function  | IP Address      | Operating System  |
-|---------- |---------- |-------------------------------------|
+|---------- |---------- |-----------------|-------------------|
 | Jump Box  |Gateway    | 20.124.125.77   | Linux             |
 | Web 1	    |Web Server | 10.0.0.5        | Linux             |
 | Web 2     |Web Server | 10.0.0.6        | Linux             |
-| ELK Server| Data      | 10.1.0.4        | Linux
+| ELK Server|Data      | 10.1.0.4         | Linux             |
 
 ### Access Policies
 
