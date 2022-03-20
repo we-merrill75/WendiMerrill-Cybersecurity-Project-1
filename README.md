@@ -34,7 +34,7 @@ Metricbeat monitors servers by collecting metrics from the system and services r
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name      | Function  | IP Address      | Operating System |
+| Name      | Function  | IP Address      | Operating System  |
 |---------- |---------- |-------------------------------------|
 | Jump Box  |Gateway    | 20.124.125.77   | Linux             |
 | Web 1	    |Web Server | 10.0.0.5        | Linux             |
