@@ -22,12 +22,13 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly available, and have restricted access to the network.
 Load balancers increase capacity, and availability by distributing incoming data between multiple web servers. 
 Jump boxes make updating, maintaining, and servicing multiple systems quicker and easier. They also provide an additional layer of security.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the event logs and system metrics.
-Filebeat monitors the log files (or specified locations), collects the log events, and forwards them to either Elasticsearch or Logstash for indexing.
+
+Filebeat monitors the log files (or specified locations), collects the log events, and forwards them to either Elasticsearch/Logstash/Kibana for indexing.
 
 Metricbeat monitors servers by collecting metrics from the system and services running on the server. The information that it collects is sent to a SIEM tool like ELK-Stack. 
 
@@ -38,7 +39,7 @@ The configuration details of each machine may be found below.
 | Jump Box  |Gateway    | 20.124.125.77   | Linux             |
 | Web 1	    |Web Server | 10.0.0.5        | Linux             |
 | Web 2     |Web Server | 10.0.0.6        | Linux             |
-| ELK Server|Data      | 10.1.0.4         | Linux             |
+| ELK Server|Data       | 10.1.0.4        | Linux             |
 
 ### Access Policies
 
@@ -57,9 +58,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box |     Yes             | 174.63.0.246                    |
 | Web 1    |     No              | 20.124.125.77/40.122.198.213    |
 | Web2     |     No              | 20.124.125.77/40.122.198.213    |
-| Elk Server  |  yes             | 40.122.198.213/10.0.0.5/10.0.0.6|  
-The Jump Box can be accessed from my public or private ip.
-
+| Elk Server  |  yes             | 40.122.198.213/10.0.0.5/10.0.0.6|
 
 ### Elk Configuration
 
@@ -76,9 +75,9 @@ The playbook implements the following tasks:
 - download and launch a docker elk container.
 
 The steps of the ELK installation are laid out below:
-  - use ssh to access the Jump Box from my host machine.
-  - using Ansible, create a container with a randomly assigned name. (wizardly_sammet)
-  - attach container to the jumpbox through wich the container can be accessed..
+  - use ssh to access the Jump Box from my host machine
+  - using Ansible, create a container with a randomly assigned name; (wizardly_sammet)
+  - attach container to the jumpbox through which the container can be accessed..
   - run the playbook to install elk in the container
  
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
