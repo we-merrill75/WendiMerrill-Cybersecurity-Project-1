@@ -1,6 +1,8 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
+![image](https://user-images.githubusercontent.com/99710515/159410897-67998620-6c0b-4c3b-9970-e6b25fe119a9.png)
+
 
 https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/topology.png
 
