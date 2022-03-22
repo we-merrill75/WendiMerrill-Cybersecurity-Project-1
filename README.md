@@ -3,7 +3,6 @@
 The files in this repository were used to configure the network depicted below.
 ![image](https://user-images.githubusercontent.com/99710515/159410897-67998620-6c0b-4c3b-9970-e6b25fe119a9.png)
 
-
 https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/topology.png
 
 The files herein have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above or select portions. 
@@ -18,7 +17,6 @@ This document contains the following details:
 
 
 ### Description of the Topology
-
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, and will have restricted access to the network.
@@ -39,8 +37,8 @@ The configuration details of each machine may be found below.
 | Web 2     |Web Server | 10.0.0.6        | Linux             |
 | ELK Server|Data       | 10.1.0.4        | Linux             |
 
-### Access Policies
 
+### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -59,7 +57,6 @@ A summary of the access policies in place can be found in the table below.
 | Elk Server  |  yes             | 10.1.0.4                        |
 
 ### Elk Configuration
-
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it is simple, reliable, efficient, and consistent for configuration management, application deployment, and orchestration (bringing different elements into a beautifully run whole operation).
 Ansible automation helps considerably with the representation of Infrastructure as Code (IAC). IAC involves provisioning and managing computing infrastructure and related configurations through machine-processable definition files.
 
