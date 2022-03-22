@@ -56,9 +56,9 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses            |
 |----------|---------------------|---------------------------------|
 | Jump Box |     Yes             | 174.63.0.246                    |
-| Web 1    |     No              | 20.124.125.77/40.122.198.213    |
-| Web2     |     No              | 20.124.125.77/40.122.198.213    |
-| Elk Server  |  yes             | 40.122.198.213/10.0.0.5/10.0.0.6|
+| Web 1    |     No              | 10.1.0.4                        |
+| Web2     |     No              | 10.1.0.4                        |
+| Elk Server  |  yes             | 10.1.0.4                        |
 
 ### Elk Configuration
 
@@ -67,12 +67,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 Ansible automation helps considerably with the representation of Infrastructure as Code (IAC). IAC involves provisioning and management of computing infrastructure and related configuration through machine-processable definition files.
 
 The playbook implements the following tasks:
-- install docker
-- install pip3
-- install docker python module
-- increase virtual memory
-- use more memory
-- download and launch a docker elk container.
+  - install docker
+  - install pip3
+  - install docker python module
+  - increase virtual memory
+  - use more memory
+  - download and launch a docker elk container.
 
 The steps of the ELK installation are laid out below:
   - use ssh to access the Jump Box from my host machine
