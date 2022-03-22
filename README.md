@@ -10,12 +10,12 @@ https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/config-Elk-vm.
 https://github.com/we-merrill75/Cybersecurity-Project-1.git
 
 This document contains the following details:
-- Description of the Topology
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
+  - Description of the Topology
+  - Access Policies
+  - ELK Configuration
+   - Beats in Use
+   - Machines Being Monitored
+  - How to Use the Ansible Build
 
 
 ### Description of the Topology
@@ -64,9 +64,9 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it is simple, reliable, efficient, and consistent for configuration management, application deployment, and orchestration (bringing different elements into a beautifully run whole operation).
  
-Ansible automation helps considerably with the representation of Infrastructure as Code (IAC). IAC involves provisioning and management of computing infrastructure and related configuration through machine-processable definition files.
+Ansible automation helps considerably with the representation of Infrastructure as Code (IAC). IAC involves provisioning and managing computing infrastructure and related configurations through machine-processable definition files.
 
-The playbook implements the following tasks:
+The  Elk playbook implements the following tasks:
   - install docker
   - install pip3
   - install docker python module
@@ -77,7 +77,7 @@ The playbook implements the following tasks:
 The steps of the ELK installation are laid out below:
   - use ssh to access the Jump Box from my host machine
   - using Ansible, create a container with a randomly assigned name; (wizardly_sammet)
-  - attach container to the jumpbox through which the container can be accessed..
+  - attach container to the jumpbox through which the container can be accessed
   - run the playbook to install elk in the container
  
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -86,22 +86,22 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
--10.0.0.5
--10.0.0.6
+  -10.0.0.5 Web 1
+  -10.0.0.6 Web-2
 
-We have installed the following Beats on these machines:
--Metricbeat
--Filebeat
+I installed the following Beats on these machines:
+  -Metricbeat
+  -Filebeat
 
-These Beats allow us to collect the following information from each machine:
--Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server, such as: Apache
+These Beats allow the collecting of  information from each machine:
+  -Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server, such as: Apache
 -Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. Here’s how Filebeat works: When you start Filebeat, it starts one or more inputs that look in the locations you’ve specified for log data
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Metricbeat configuratin file to the /etc/ansible.
+- Copy the Metricbeat configuration file to the /etc/ansible.
 - Update the hosts file to include the ELK server ip address.
 - Run the playbook, and navigate to Kibana Metricbeat/download module to check that the installation worked as expected.
 
