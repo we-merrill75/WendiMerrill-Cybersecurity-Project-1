@@ -106,5 +106,5 @@ SSH into the control node and follow the steps below:
 - _Which URL do you navigate to in order to check that the ELK server is running?   http://174.63.0.246:5601/app/kibana#/home?_g=()
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
-    curl --https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/ELK-config.yml
-    curl --https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/ansible-hosts.txt
+  curl --https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/ELK-config.yml
+  curl --https://github.com/we-merrill75/Cybersecurity-Project-1/blob/main/ansible-hosts.txt
